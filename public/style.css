@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --1: #001318;
+    --ice-white: #D9D9D9;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--1);
+}
+
+header {
+    width: 100%;
+    height: 160px;
+    background: var(--ice-white);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/HEADER_BACKGROUND.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inside_header {
+    width: 1448px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    width: 1448px;
+    height: 494px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--ice-white);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/BANNER_BACKGROUND.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
+
+.divisor {
+    margin: auto;
+    width: 1448px;
+    height: 1px;
+    margin-top: 80px;
+}
+
+.divisorText {
+    background-color: var(--1);
+    border: 2pt solid var(--ice-white);
+    padding: 12px;
+    display: inline;
+    position: relative;
+    left: 80px;
+    bottom: 14px;
+    text-transform: uppercase;
+}
+
+.editais_container {
+    margin: auto;
+    margin-top: 80px;
+    width: 1448px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.edital_card {
+    width: 400px;
+    height: 516px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--ice-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url(assets/EDITAL_BACKGROUND.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140%;
+}
+
+.content_edital_card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 360px;
+    padding-bottom: 20px;
+}
+
+.editais_botoes_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+button {
+    width: 312px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: none;
+    background: var(--1);
+    color: #FFF;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+p {
+    color: var(--1);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.container_about_us {
+    width: 1448px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.text_about_us {
+    color: var(--ice-white);
+    text-align: justify;
+    font-size: 22px;
+    font-weight: 400;
+    width: 700px;
+}
+
+footer {
+    width: 100%;
+    height: 160px;
+    background: var(--ice-white);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/FOOTER_BACKGROUND.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+}
