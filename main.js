@@ -1,12 +1,11 @@
-var express = require("express");
-var app = express();
+const express = require("express");
+const app = express();
+const path = require("path");
 
-app.use(express.static("public"));
-
-app.get("/login", function(req,res){
-    res.send("tela de login");
+app.get("/", function(req,res){
+    res.sendFile(path.join(__dirname + "/public/index.html"));
 })
 
-app.listen("8801", ()=> {
+app.listen(8801, function(){
     console.log("Servidor rodando em: http://localhost:8801")
 })
